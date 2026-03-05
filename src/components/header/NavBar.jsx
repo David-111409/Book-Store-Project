@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-const NavBar = ({open, handleOpen}) => {
+const NavBar = ({ open, handleOpen }) => {
   return (
-    <nav className= {open && "open"} onClick={handleOpen}>
+    <nav className={open ? "open" : ""} onClick={handleOpen}>
       <ul>
         <li>
           <Link to="/">Home</Link>
