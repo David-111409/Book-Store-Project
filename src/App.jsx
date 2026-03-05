@@ -1,10 +1,11 @@
-import './App.css'
-
+import Header from "./components/header/Header";
+import "bootstrap-icons/font/bootstrap-icons.css";
 function App() {
-  return <div>hello</div>
-
- 
-  
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
-export default App
+export default App;
