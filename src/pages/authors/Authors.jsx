@@ -2,6 +2,7 @@ import { useState } from "react";
 import authors from "../../data/authors";
 import "./authors.css";
 import Pagination from "../../components/pagination/Pagination";
+import { Link } from "react-router-dom";
 
 const Authors = () => {
   const [inputValue, setInputValue] = useState("");
@@ -23,7 +24,7 @@ const Authors = () => {
   } else {
     someAuthors = authors.slice((currentPage - 1) * 4, currentPage * 4);
   }
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setSearch(inputValue);
@@ -45,7 +46,9 @@ const Authors = () => {
 
       <div className="authors-wrapper">
         {someAuthors.length === 0 ? (
-          <p className="not-found">Author Not Found</p>
+          <p className="not-found">
+            Author Not Found <button onClick={handleSearch}> Back to page</button>
+          </p>
         ) : (
           someAuthors.map((author) => (
             <div key={author.id} className="author">

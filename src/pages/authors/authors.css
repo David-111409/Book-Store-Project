@@ -4,7 +4,7 @@
 
 .authors-search-wrapper {
   position: relative;
-  max-width: 500px;
+  max-width: 400px;
   margin: 30px auto;
 }
 
@@ -71,4 +71,26 @@
   background: #f5f5f5;
   padding: 30px;
   border-radius: 10px;
+}
+
+.not-found button {
+  margin-left: 10px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.not-found button:hover {
+  background-color: #555;
+  transform: translateY(-1px);
+}
+
+.not-found button:active {
+  transform: translateY(0);
 }
