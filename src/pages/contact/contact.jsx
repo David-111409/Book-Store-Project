@@ -20,7 +20,7 @@ const Contact = () => {
     }
 
     if (text.trim() === "") {
-      return toast.error("Your message is required");
+      return toast.error("Message is required");
     }
 
     setEmail("");
