@@ -1,13 +1,14 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-import Header from "./components/header/Header";
-
 import { Route, Routes } from "react-router-dom";
+import Header from "./components/header/Header";
 import About from "./pages/about/About";
 import Login from "./pages/forms/Login";
 import Register from "./pages/forms/Register";
 import Home from "./pages/home/Home";
+import Footer from "./components/footer/Footer";
+
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
+      <Footer />
     </>
   );
 }
