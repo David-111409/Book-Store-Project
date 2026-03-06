@@ -11,6 +11,8 @@ import About from "./pages/about/About";
 import Contact from "./pages/contact/contact";
 import Footer from "./components/footer/Footer";
 import Authors from "./pages/authors/authors";
+import Cart from "./pages/cart/Cart";
+
 function App() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -27,7 +29,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/authors" element = {<Authors />} />
+        <Route path="/authors" element={<Authors />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer />
     </>
