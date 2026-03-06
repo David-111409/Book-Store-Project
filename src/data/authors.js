@@ -37,6 +37,8 @@ const authors = [
   { id: 14, name: "Warren Buffett", image: "/authors/buffett.jpg" },
   { id: 10, name: "Wayne Dyer", image: "/authors/wayne.jpg" },
   { id: 17, name: "Xavier Crement", image: "/authors/crement.jpg" },
+
+  
 ];
 
 export default authors;

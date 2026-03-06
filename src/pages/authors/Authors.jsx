@@ -1,15 +1,29 @@
 import { useState } from "react";
 import authors from "../../data/authors";
 import "./authors.css";
+import Pagination from "../../components/pagination/Pagination";
 
 const Authors = () => {
   const [inputValue, setInputValue] = useState("");
   const [search, setSearch] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
 
-  const filteredAuthors = authors.filter((author) =>
-    author.name.toLowerCase().includes(search.toLowerCase()),
-  );
+  const onPageChange = (i) => setCurrentPage(i);
+  const handleSearch = () => {
+    setInputValue("");
+    setSearch("");
+  };
+  const totalPages = Math.ceil(authors.length / 4);
 
+  let someAuthors;
+  if (search) {
+    someAuthors = authors.filter((author) =>
+      author.name.toLowerCase().includes(search.toLowerCase()),
+    );
+  } else {
+    someAuthors = authors.slice((currentPage - 1) * 4, currentPage * 4);
+  }
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     setSearch(inputValue);
@@ -30,10 +44,10 @@ const Authors = () => {
       </form>
 
       <div className="authors-wrapper">
-        {filteredAuthors.length === 0 ? (
+        {someAuthors.length === 0 ? (
           <p className="not-found">Author Not Found</p>
         ) : (
-          filteredAuthors.map((author) => (
+          someAuthors.map((author) => (
             <div key={author.id} className="author">
               <img src={author.image} alt={author.name} className="author-img" />
               <h2 className="author-name">{author.name}</h2>
@@ -41,6 +55,12 @@ const Authors = () => {
           ))
         )}
       </div>
+      <Pagination
+        handleSearch={handleSearch}
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={onPageChange}
+      />
     </section>
   );
 };
