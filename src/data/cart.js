@@ -1,4 +1,4 @@
-export const cart = [
+const cart = [
   {
     id: 1,
     bookId: 8,
@@ -18,3 +18,5 @@ export const cart = [
     author: "Robert T.Kiyosaki",
   },
 ];
+
+export default cart;

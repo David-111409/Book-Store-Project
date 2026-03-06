@@ -1,4 +1,4 @@
-export const books = [
+const books = [
   {
     id: 1,
     price: 10.5,
@@ -130,3 +130,5 @@ export const books = [
     inStock: false,
   },
 ];
+
+export default books;
