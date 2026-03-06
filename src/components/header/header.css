@@ -82,6 +82,24 @@ header {
   cursor: pointer;
 }
 
+.header-middle-cart-wrapper {
+  position: relative;
+}
+
+.cart-notification {
+  position: absolute;
+  top: -7px;
+  right: -12px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
 /* NavBar */
 nav {
   background-color: var(--main-color);

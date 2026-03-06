@@ -14,6 +14,7 @@ const Middle = () => {
         <i className="bi bi-search"></i>
       </div>
       <Link to="/cart" className="header-middle-cart-wrapper">
+        <b className="cart-notification">1</b>
         <i className="bi bi-cart2"></i>
       </Link>
     </div>
