@@ -13,7 +13,7 @@ import Footer from "./components/footer/Footer";
 import Authors from "./pages/authors/authors";
 import Cart from "./pages/cart/Cart";
 import Book from "./pages/book-details/book";
-import Author from "./pages/authors/author";
+
 import { CartProvider } from "./context/CartContext";
 import NoResults from "./pages/no-result/NoResult";
 
@@ -36,7 +36,6 @@ function App() {
         <Route path="/authors" element={<Authors />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/book/:id" element={<Book />} />
-        <Route path="/author/:id" element={<Author />} />
         <Route path="/no-results" element={<NoResults />} />
       </Routes>
       <Footer />
