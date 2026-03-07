@@ -1,10 +1,11 @@
-import { useParams } from "react-router-dom";
 import "./book.css";
+import { useParams } from "react-router-dom";
 import books from "../../data/books";
 import Rating from "../../components/book-slider/Rating";
 import { useState, useContext } from "react";
 import { CartContext } from "../../context/Contexts";
 import { toast } from "react-toastify";
+
 const Book = () => {
   const { addToCart } = useContext(CartContext);
   const handleAddingBook = (item) => {

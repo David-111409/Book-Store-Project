@@ -13,14 +13,15 @@ const Modal = ({ bookData, handleClose }) => {
     return toast.success("Book added to cart successfully 🛒", {
       position: "top-right",
     });
-   
   };
   return (
     <div className="modal-container" onClick={handleClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <i onClick={handleClose} className="bi bi-x-circle-fill modal-icon"></i>
         <div className="modal-content-img">
-          <img src={`/books/${image}`} alt={title} />
+          <Link to={`/book/${bookData.id}`}>
+            <img src={`/books/${image}`} alt={title} />
+          </Link>
         </div>
         <div className="modal-content-info">
           <h5 className="modal-content-info-title">{title}</h5>

@@ -69,12 +69,18 @@ h2.title {
 }
 
 .book-slide-item-img {
+  display: block;
   width: 60%;
   object-fit: contain;
 }
 
+.book-slide-item img {
+  width: 100%;
+}
+
 .book-slide-item-title {
   font-size: 18px;
+  color: black;
 }
 
 .book-slider-item-price {

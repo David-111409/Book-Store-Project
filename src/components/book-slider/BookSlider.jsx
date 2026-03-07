@@ -5,6 +5,7 @@ import Rating from "./Rating";
 import { CartContext } from "../../context/Contexts";
 import { toast } from "react-toastify";
 import Modal from "./Modal";
+import { Link } from "react-router-dom";
 const BookSlider = ({ title }) => {
   console.log("rendering");
   const { addToCart } = useContext(CartContext);
@@ -42,8 +43,12 @@ const BookSlider = ({ title }) => {
         >
           {books.map((item) => (
             <div key={item.id} className="book-slide-item">
-              <img src={`/books/${item.image}`} alt={item.title} className="book-slide-item-img" />
-              <h3 className="book-slide-item-title">{item.title}</h3>
+              <Link to={`/book/${item.id}`} className="book-slide-item-img">
+                <img src={`/books/${item.image}`} alt={item.title} />
+              </Link>
+              <Link to={`/book/${item.id}`}>
+                <h3 className="book-slide-item-title">{item.title}</h3>
+              </Link>
               <Rating rating={item.rating} reviews={item.reviews} />
               <div className="book-slider-item-price">${item.price}</div>
               <div className="book-slider-icons-wrapper">

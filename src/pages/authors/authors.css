@@ -54,7 +54,9 @@
   background-color: white;
   text-align: center;
 }
-
+.author h2 {
+  color: black;
+}
 .author-img {
   width: 100%;
   height: 300px;

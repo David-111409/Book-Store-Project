@@ -47,14 +47,14 @@ const Authors = () => {
       <div className="authors-wrapper">
         {someAuthors.length === 0 ? (
           <p className="not-found">
-            Author Not Found <button onClick={handleSearch}> Back to page</button>
+            Author Not Found <button onClick={handleSearch}> Back to Authors</button>
           </p>
         ) : (
           someAuthors.map((author) => (
-            <div key={author.id} className="author">
+            <Link to={`/author/${author.id}`} key={author.id} className="author">
               <img src={author.image} alt={author.name} className="author-img" />
               <h2 className="author-name">{author.name}</h2>
-            </div>
+            </Link>
           ))
         )}
       </div>
