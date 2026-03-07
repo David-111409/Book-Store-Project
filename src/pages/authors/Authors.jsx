@@ -51,10 +51,10 @@ const Authors = () => {
           </p>
         ) : (
           someAuthors.map((author) => (
-            <Link to={`/author/${author.id}`} key={author.id} className="author">
+            <div className="author">
               <img src={author.image} alt={author.name} className="author-img" />
               <h2 className="author-name">{author.name}</h2>
-            </Link>
+            </div>
           ))
         )}
       </div>
