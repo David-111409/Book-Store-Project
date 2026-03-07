@@ -1,8 +1,7 @@
 import "./cart.css";
 import { CartContext } from "../../context/Contexts";
 import { useContext } from "react";
-
-
+import { Link } from "react-router-dom";
 const Cart = () => {
   const { cartItems, addToCart, removeFromCart, minusOneItem } = useContext(CartContext);
 
@@ -13,7 +12,9 @@ const Cart = () => {
         <div className="cart-items">
           {cartItems.map((item) => (
             <div key={item.id} className="cart-item">
-              <img src={`/books/${item.image}`} alt={item.title} className="cart-item-img" />
+              <Link to={`/book/${item.id}`}>
+                <img src={`/books/${item.image}`} alt={item.title} className="cart-item-img" />
+              </Link>
               <div className="cart-item-info">
                 <div>
                   <div className="cart-item-book-title">
@@ -52,11 +53,11 @@ const Cart = () => {
           </div>
           <div className="order-summary-item">
             <span>Shipping Cost</span>
-            <span>0</span>
+            <span>4.00$</span>
           </div>
           <div className="order-summary-item">
             <span>Discount</span>
-            <span>0</span>
+            <span>4.00$</span>
           </div>
           <div className="order-summary-item">
             <strong>Total</strong>

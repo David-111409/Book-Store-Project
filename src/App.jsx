@@ -12,6 +12,7 @@ import Contact from "./pages/contact/contact";
 import Footer from "./components/footer/Footer";
 import Authors from "./pages/authors/authors";
 import Cart from "./pages/cart/Cart";
+import Book from "./pages/book-details/book";
 import { CartProvider } from "./context/CartContext";
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/authors" element={<Authors />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/book/:id" element />
+        <Route path="/book/:id" element={<Book />} />
       </Routes>
       <Footer />
     </CartProvider>
