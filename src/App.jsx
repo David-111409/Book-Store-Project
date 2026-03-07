@@ -12,7 +12,7 @@ import Contact from "./pages/contact/contact";
 import Footer from "./components/footer/Footer";
 import Authors from "./pages/authors/authors";
 import Cart from "./pages/cart/Cart";
-
+import { CartProvider } from "./context/CartContext";
 function App() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -20,7 +20,7 @@ function App() {
   }, [pathname]);
 
   return (
-    <>
+    <CartProvider>
       <ToastContainer position="top-center" autoClose={1800} hideProgressBar={true} />
       <Header />
       <Routes>
@@ -33,7 +33,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer />
-    </>
+    </CartProvider>
   );
 }
 
