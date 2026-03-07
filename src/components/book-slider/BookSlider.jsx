@@ -4,15 +4,25 @@ import "./book-slider.css";
 import Rating from "./Rating";
 import { CartContext } from "../../context/Contexts";
 import { toast } from "react-toastify";
+import Modal from "./Modal";
 const BookSlider = ({ title }) => {
   console.log("rendering");
   const { addToCart } = useContext(CartContext);
   const [slideIndex, setSlideIndex] = useState(0);
+  const [openModal, setOpenModal] = useState(false);
+  const [bookData, setBookData] = useState(null);
+
   // Handle Click
   const handleMove = (direction) =>
     direction === "right" ? setSlideIndex(slideIndex + 1) : setSlideIndex(slideIndex - 1);
 
   // Handle Modal
+  const handleModel = (item) => {
+    setOpenModal(true);
+    setBookData(item);
+  };
+
+  const handleClose = () => setOpenModal(false);
 
   return (
     <>
@@ -37,7 +47,7 @@ const BookSlider = ({ title }) => {
               <Rating rating={item.rating} reviews={item.reviews} />
               <div className="book-slider-item-price">${item.price}</div>
               <div className="book-slider-icons-wrapper">
-                <i className="bi bi-eye-fill"></i>
+                <i className="bi bi-eye-fill" onClick={() => handleModel(item)}></i>
                 <button
                   onClick={() => {
                     addToCart({ ...item, quantity: 1 });
@@ -58,6 +68,7 @@ const BookSlider = ({ title }) => {
             onClick={() => handleMove("right")}
           ></i>
         )}
+        {openModal && <Modal bookData={bookData} handleClose={handleClose} />}
       </div>
     </>
   );

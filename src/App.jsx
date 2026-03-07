@@ -32,6 +32,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/authors" element={<Authors />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/book/:id" element />
       </Routes>
       <Footer />
     </CartProvider>
