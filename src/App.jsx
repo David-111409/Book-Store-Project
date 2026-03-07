@@ -13,6 +13,7 @@ import Footer from "./components/footer/Footer";
 import Authors from "./pages/authors/authors";
 import Cart from "./pages/cart/Cart";
 import { CartProvider } from "./context/CartContext";
+
 function App() {
   const { pathname } = useLocation();
   useEffect(() => {

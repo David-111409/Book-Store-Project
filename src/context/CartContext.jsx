@@ -27,9 +27,17 @@ export const CartProvider = ({ children }) => {
   const removeFromCart = (id) => {
     setCartItems((prev) => prev.filter((item) => item.id !== id));
   };
-
+  const minusOneItem = (id) =>
+    setCartItems((prev) =>
+      prev.map((item) => {
+        if (item.quantity > 1 && id === item.id) {
+          return { ...item, quantity: item.quantity - 1 };
+        }
+        return item;
+      }),
+    );
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart }}>
+    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, minusOneItem }}>
       {children}
     </CartContext.Provider>
   );

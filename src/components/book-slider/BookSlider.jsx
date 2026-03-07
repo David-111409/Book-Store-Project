@@ -1,17 +1,17 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import books from "../../data/books";
 import "./book-slider.css";
 import Rating from "./Rating";
-import { useContext } from "react";
 import { CartContext } from "../../context/Contexts";
+import { toast } from "react-toastify";
 const BookSlider = ({ title }) => {
-  const { cartItems, addToCart } = useContext(CartContext);
+  console.log("rendering");
+  const { addToCart } = useContext(CartContext);
   const [slideIndex, setSlideIndex] = useState(0);
-  console.log(cartItems);
   // Handle Click
-  const handleMove = (direction) => {
+  const handleMove = (direction) =>
     direction === "right" ? setSlideIndex(slideIndex + 1) : setSlideIndex(slideIndex - 1);
-  };
+
   // Handle Modal
 
   return (
@@ -38,7 +38,14 @@ const BookSlider = ({ title }) => {
               <div className="book-slider-item-price">${item.price}</div>
               <div className="book-slider-icons-wrapper">
                 <i className="bi bi-eye-fill"></i>
-                <button onClick={() => addToCart({...item, quantity: 1})}>
+                <button
+                  onClick={() => {
+                    addToCart({ ...item, quantity: 1 });
+                    return toast.success("Book added to cart successfully 🛒", {
+                      position: "top-right",
+                    });
+                  }}
+                >
                   <i className="bi bi-cart-plus"></i>
                 </button>
               </div>
