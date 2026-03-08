@@ -30,12 +30,15 @@ const Cart = () => {
                   <div className="cart-item-quantity">
                     <button onClick={() => addToCart(item)} className="bi bi-plus-lg"></button>
                     <b>{item.quantity}</b>
-                    <button onClick={() => minusOneItem(item.id)} disabled={item.quantity <= 1}>
-                      <i className="bi bi-dash-lg"></i>{" "}
-                    </button>
-                    <button className="btn-del" onClick={() => removeFromCart(item.id)}>
-                      <i className="bi bi-trash-fill"></i>
-                    </button>
+                    {item.quantity > 1 ? (
+                      <button onClick={() => minusOneItem(item.id)} disabled={item.quantity <= 1}>
+                        <i className="bi bi-dash-lg"></i>
+                      </button>
+                    ) : (
+                      <button className="btn-del" onClick={() => removeFromCart(item.id)}>
+                        <i className="bi bi-trash-fill"></i>
+                      </button>
+                    )}
                   </div>
                   <div className="cart-item-price">${(item.price * item.quantity).toFixed(2)}</div>
                 </div>

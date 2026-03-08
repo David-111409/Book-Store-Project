@@ -24,7 +24,6 @@
   display: flex;
   align-items: center;
   padding: 5px;
-  position: relative;
   margin-bottom: 21px;
   border-bottom: 2px solid gray;
 }
@@ -53,8 +52,6 @@
   font-size: 21px;
 }
 
-
-
 .cart-item-quantity button:disabled {
   cursor: not-allowed;
 }
@@ -80,11 +77,6 @@
   background-color: #e9ecef;
 }
 
-.cart-item-quantity button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
 .cart-item-quantity b {
   min-width: 20px;
   text-align: center;
@@ -98,10 +90,6 @@
 
 .btn-del {
   color: crimson;
-  cursor: pointer;
-  position: absolute;
-  bottom: 5px;
-  right: 15px;
   font-size: 24px;
 }
 
