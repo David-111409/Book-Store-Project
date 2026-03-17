@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "title": "اتش بي اليت بوك الجيل الثاني",
+    "image": "/images/products/laptops/l1.jpg",
+    "price": 750,
+    "rating": 4.5,
+    "reviews": 900,
+    "category": "laptops"
+  },
+  {
+    "id": 2,
+    "title": "لابتوب ايسر نيترو 515-5",
+    "image": "/images/products/laptops/l2.jpg",
+    "price": 600,
+    "rating": 3.8,
+    "reviews": 250,
+    "category": "laptops"
+  },
+  {
+    "id": 3,
+    "title": "لابتوب هواوي ميت بوك 14",
+    "image": "/images/products/laptops/l3.jpg",
+    "price": 800,
+    "rating": 4.6,
+    "reviews": 1200,
+    "category": "laptops"
+  },
+  {
+    "id": 4,
+    "title": "لابتوب جيمنج اسوس - 571GT",
+    "image": "/images/products/laptops/l4.jpg",
+    "price": 950,
+    "rating": 4.1,
+    "reviews": 7548,
+    "category": "laptops"
+  },
+  {
+    "id": 5,
+    "title": "لابتوب اسوس تي يو اف 15",
+    "image": "/images/products/laptops/l1.jpg",
+    "price": 700,
+    "rating": 4.5,
+    "reviews": 2200,
+    "category": "laptops"
+  },
+  {
+    "id": 6,
+    "title": "اسوس للالعاب F15",
+    "image": "/images/products/laptops/l6.jpg",
+    "price": 990,
+    "rating": 4.8,
+    "reviews": 5500,
+    "category": "laptops"
+  },
+  {
+    "id": 7,
+    "title": "لينوفو ايديا باد فلكس 5 شاشة 14",
+    "image": "/images/products/laptops/l7.jpg",
+    "price": 500,
+    "rating": 4.2,
+    "reviews": 850,
+    "category": "laptops"
+  },
+  {
+    "id": 8,
+    "title": "مايكروسوفت سيرفس جو 2 بشاشة لمس",
+    "image": "/images/products/laptops/l8.jpg",
+    "price": 850,
+    "rating": 4.7,
+    "reviews": 8200,
+    "category": "laptops"
+  },
+  {
+    "id": 9,
+    "title": "مايكروسوفت سيرفس برو 8 بشاشة 13",
+    "image": "/images/products/laptops/l8.jpg",
+    "price": 900,
+    "rating": 4.1,
+    "reviews": 1895,
+    "category": "laptops"
+  },
+  {
+    "id": 10,
+    "title": "لابتوب فيفوبوك من اسوس 17",
+    "image": "/images/products/laptops/l10.jpg",
+    "price": 680,
+    "rating": 3.5,
+    "reviews": 8124,
+    "category": "laptops"
+  },
+  {
+    "id": 11,
+    "title": "هاتف ابل ايفون 13 الجديد",
+    "image": "/images/products/mobiles/m1.jpg",
+    "price": 800,
+    "rating": 4.9,
+    "reviews": 8240,
+    "category": "mobiles"
+  },
+  {
+    "id": 12,
+    "title": "هاتف سامسونج جالكسي الذكي M33",
+    "image": "/images/products/mobiles/m2.jpg",
+    "price": 350,
+    "rating": 4.5,
+    "reviews": 9014,
+    "category": "mobiles"
+  },
+  {
+    "id": 13,
+    "title": "جوال سامسونج جالكسي ام 32 شريحتي الاتصال",
+    "image": "/images/products/mobiles/m3.jpg",
+    "price": 200,
+    "rating": 3.5,
+    "reviews": 7784,
+    "category": "mobiles"
+  },
+  {
+    "id": 14,
+    "title": "جوال بوكو اكس 4 برو",
+    "image": "/images/products/mobiles/m4.jpg",
+    "price": 250,
+    "rating": 4.5,
+    "reviews": 2401,
+    "category": "mobiles"
+  },
+  {
+    "id": 15,
+    "title": "سامسونج جالكسي اف اي الجيل الرابع",
+    "image": "/images/products/mobiles/m5.jpg",
+    "price": 290,
+    "rating": 3,
+    "reviews": 420,
+    "category": "mobiles"
+  },
+  {
+    "id": 16,
+    "title": "فيفو اكس دي اس 256 ازرق",
+    "image": "/images/products/mobiles/m6.jpg",
+    "price": 750,
+    "rating": 5,
+    "reviews": 1500,
+    "category": "mobiles"
+  },
+  {
+    "id": 17,
+    "title": "جوال ابل ايفون 12 الجديد",
+    "image": "/images/products/mobiles/m7.jpg",
+    "price": 700,
+    "rating": 4.5,
+    "reviews": 4540,
+    "category": "mobiles"
+  },
+  {
+    "id": 18,
+    "title": "هاتف ذكي ثنائي شرائح",
+    "image": "/images/products/mobiles/m8.jpg",
+    "price": 500,
+    "rating": 4.5,
+    "reviews": 17124,
+    "category": "mobiles"
+  },
+  {
+    "id": 19,
+    "title": "جوال شاومي بوكو سي 40",
+    "image": "/images/products/mobiles/m9.jpg",
+    "price": 470,
+    "rating": 4,
+    "reviews": 4700,
+    "category": "mobiles"
+  },
+  {
+    "id": 20,
+    "title": "جوال سامسونج جالكسي الذكي M52",
+    "image": "/images/products/mobiles/m10.jpg",
+    "price": 850,
+    "rating": 5,
+    "reviews": 2300,
+    "category": "mobiles"
+  },
+  {
+    "id": 21,
+    "title": "نوكيا A12",
+    "image": "/images/products/mobiles/m11.jpg",
+    "price": 40,
+    "rating": 4.1,
+    "reviews": 850,
+    "category": "mobiles"
+  },
+  {
+    "id": 22,
+    "title": "سامسونج جالكسي ام 13 لايت بنظام",
+    "image": "/images/products/mobiles/m12.jpg",
+    "price": 620,
+    "rating": 5,
+    "reviews": 7500,
+    "category": "mobiles"
+  },
+  {
+    "id": 23,
+    "title": "هاتف هواوي نوفا 9",
+    "image": "/images/products/mobiles/m13.jpg",
+    "price": 250,
+    "rating": 3.5,
+    "reviews": 1784,
+    "category": "mobiles"
+  },
+  {
+    "id": 24,
+    "title": "الهاتف الذكي جالكسي ام 32 الجيل الخامس",
+    "image": "/images/products/mobiles/m14.jpg",
+    "price": 320,
+    "rating": 4.1,
+    "reviews": 8102,
+    "category": "mobiles"
+  }
+]
